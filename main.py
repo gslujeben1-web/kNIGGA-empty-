@@ -31,4 +31,5 @@ book_in = st.text_input("Book")
 for i in books:
     if book_in == books:
         st.error("Book is already in the database!")
-    else books.append(book_in)
+    else:
+        books.append(book_in)
