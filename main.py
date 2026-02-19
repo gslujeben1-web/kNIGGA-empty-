@@ -24,3 +24,11 @@ if st.button("Check Book"):
         st.success("The book exists in the database!")
     else:
         st.error("The book is NOT in the database.")
+
+# Insert books
+st.write("Insert book")
+book_in = st.text_input("Book")
+for i in books:
+    if book_in == books:
+        st.error("Book is already in the database!")
+    else books.append(book_in)
